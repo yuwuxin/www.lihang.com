@@ -6,4 +6,7 @@
  * Time: 下午11:02
  */
 
+
+define('env','develop');
+
 echo "this is redis";
