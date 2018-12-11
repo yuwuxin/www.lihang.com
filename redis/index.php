@@ -5,3 +5,5 @@
  * Date: 18-12-11
  * Time: 下午11:02
  */
+
+echo "this is redis";
