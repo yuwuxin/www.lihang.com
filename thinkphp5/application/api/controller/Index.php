@@ -21,4 +21,15 @@ class Index
         $data = ['name' => 'thinkphp', 'url' => 'thinkphp.cn'];
         return ['data' => $data, 'code' => 1, 'message' => '操作完成'];
     }
+
+    public function info()
+    {
+        echo "api info ...";
+    }
+
+    public function token()
+    {
+        $data = ['token' => md5('token')];
+        return ['code' => 1, 'data' => $data, 'message' => '操作完成'];
+    }
 }
