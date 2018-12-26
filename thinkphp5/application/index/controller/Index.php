@@ -1,6 +1,8 @@
 <?php
 namespace app\index\controller;
 
+use think\Db;
+
 class Index
 {
     public function index()
@@ -9,6 +11,7 @@ class Index
     }
 
     public function info(){
-        echo phpinfo();
+        $result = Db::query('select * from `action` where id =?',[8]);
+        print_r($result);
     }
 }
